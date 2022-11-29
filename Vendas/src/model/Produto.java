@@ -8,11 +8,11 @@ public class Produto {
     private Tipo_Produto tipo;
     private Estoque estoque;
 
-    public Produto(String nome, Double preco, Tipo_Produto tipo) {
+    public Produto(String nome, Double preco, Tipo_Produto tipo, Estoque estoque) {
       this.nome = nome;
       this.preco = preco;
       this.tipo = tipo;
-      estoque = new Estoque(0);
+      this.estoque = estoque;
     }
 
     public String getNome() {
