@@ -41,5 +41,10 @@ public class Produto {
     public void setEstoque(Estoque estoque) {
       this.estoque = estoque;
     }
+    
+    public String toString() {
+    	return "Nome: " + nome + "\nPreço: " + preco + "\nEstoque: " + 
+    			estoque.getEstoque() + "\nTipo: " + tipo;
+    }
 
 }
